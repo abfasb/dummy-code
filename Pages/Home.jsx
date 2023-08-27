@@ -3,7 +3,7 @@ import '../src/App.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className='main-div'>
         <div className='Main-Nav'>
         <div className='image-container'>
             <img src="../src/Images/LittleLogo.png" alt="Logo" />
@@ -18,9 +18,28 @@ const Home = () => {
             </div>
             <div className='Nav-Router'>
                <li>Home</li>
-                <li>Products</li>
+                <li>Product</li>
                 <li>Cart</li>
             </div>
+            <div className='Parent-Signup'>
+                <button>Sign in</button>
+            </div>
+        </div>
+        <div className='bg-photo'>
+            <img src="../src/Images/Home-Bg.png" alt="" />
+        </div>
+        <div className='bg-content'>
+            <div className='category-content'>
+                <button className='first-child'>All Categories</button>
+                <button>Technology</button>
+                <button>Fashion</button>
+                <button>Skincare</button>
+                <button>Vouchers</button>
+            </div>
+            <div className='Input-Search'>
+            <input type="search" name="" id="" placeholder='Search Items'/>
+            <input type="button" value="Search" />
+        </div>
         </div>
     </div>
   )
